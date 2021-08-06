@@ -1,0 +1,4 @@
+example_id                    | status | run_time        |
+----------------------------- | ------ | --------------- |
+./spec/tagfinder_spec.rb[1:1] | passed | 0.00041 seconds |
+./spec/tagfinder_spec.rb[1:2] | failed | 0.00939 seconds |
