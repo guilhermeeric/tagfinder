@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require_relative "tagfinder/version"
+require_relative "tagfinder/commands/command"
+require_relative "tagfinder/commands/find"
 require "thor"
 
 module Tagfinder
@@ -13,7 +15,8 @@ module Tagfinder
 
     desc "find", "Search for text in an url"
     def find(url, text)
-      puts "You want to find #{text} on the url #{url}?"
+      find_command = Find.new(url, text)
+      find_command.execute()
     end
   end
 end
